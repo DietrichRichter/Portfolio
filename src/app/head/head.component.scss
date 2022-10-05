@@ -37,11 +37,16 @@
         color: white;
         font-size: 64px;
     }
+
+    span {
+        color: #fa2759;
+    }
 }
 
 .arrow-container {
     display: flex;
     justify-content: center;
+    padding-bottom: 100px;
 
     img {
         cursor: pointer;
