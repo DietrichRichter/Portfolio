@@ -1,0 +1,31 @@
+.footer-main-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data-container {
+    color: lightgray;
+
+    a {
+        text-decoration: none;
+        color: lightgray;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.icons-container {
+
+    img {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        margin-left: 80px;
+    }
+}
