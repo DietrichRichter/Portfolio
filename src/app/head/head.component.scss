@@ -13,7 +13,7 @@
 
         &:hover {
             background-color: #2dfcd8;
-            color: white;
+            color: black;
             cursor: pointer;
         }
     }
@@ -64,5 +64,28 @@
     .button-container {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media(max-width:500px) {
+    .headline-container {
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    .head-container {
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .headline-container {
+        h1 {
+            font-size: 40px;
+        }
     }
 }
