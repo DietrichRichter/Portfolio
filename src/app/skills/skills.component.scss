@@ -71,7 +71,27 @@
 }
 
 @media(max-width:550px) {
+    .skills-background-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .all-skills-container {
         width: 100%;
+    }
+
+    .skills-main-container {
+        width: 100%;
+    }
+
+    .skill {
+        width: 100%;
+    }
+}
+
+@media(max-width:400px) {
+    .skills-background-container {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
