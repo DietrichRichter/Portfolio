@@ -19,7 +19,7 @@
 
 .skills-main-container {
     height: 127px;
-    width: 150px;
+    width: 250px;
     position: relative;
     margin: 15px;
 }
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    width: 1000px;
     flex-wrap: wrap;
     padding-bottom: 100px;
 }
@@ -58,7 +58,7 @@
 
 .skill {
     height: 100px;
-    width: 150px;
+    width: 100%;
     background-color: white;
     border-radius: 10px;
 

@@ -1,53 +1,21 @@
-<div class="about-me-main-container">
+<div class="about-me-main-container" id="about-me-container">
     <div class="about-me-container">
         <div class="image">
             <img src="../../assets/img/profilbild.png">
         </div>
         <div class="about-me-text">
             <h2>About me.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto ea, eaque error natus soluta quaerat?
-                Exercitationem dolor, voluptate cum itaque perspiciatis enim deleniti debitis optio, blanditiis facilis
-                corporis mollitia error.
-            </p>
+            <p>text</p>
         </div>
     </div>
     <div class="line"></div>
     <div class="icon-main-container">
-        <div class="icon-container">
+        <div *ngFor="let a of aboutMe" class="icon-container">
             <div class="img-container">
-                <img src="../../assets/img/walk-line.png">
+                <img src="{{a.icon}}">
             </div>
-            <h3>headline</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore nemo blanditiis, dolorem inventore
-                nulla consequuntur neque aspernatur dolorum! Inventore dicta magni consequuntur quia! Facere, est! Qui
-                omnis explicabo ad.</p>
-        </div>
-        <div class="icon-container">
-            <div class="img-container">
-                <img src="../../assets/img/heart-line.png">
-            </div>
-            <h3>headline</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore nemo blanditiis, dolorem inventore
-                nulla consequuntur neque aspernatur dolorum! Inventore dicta magni consequuntur quia! Facere, est! Qui
-                omnis explicabo ad.</p>
-        </div>
-        <div class="icon-container">
-            <div class="img-container">
-                <img src="../../assets/img/search-line.png">
-            </div>
-            <h3>headline</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore nemo blanditiis, dolorem inventore
-                nulla consequuntur neque aspernatur dolorum! Inventore dicta magni consequuntur quia! Facere, est! Qui
-                omnis explicabo ad.</p>
-        </div>
-        <div class="icon-container">
-            <div class="img-container">
-                <img src="../../assets/img/flight-takeoff-line.png">
-            </div>
-            <h3>headline</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore nemo blanditiis, dolorem inventore
-                nulla consequuntur neque aspernatur dolorum! Inventore dicta magni consequuntur quia! Facere, est! Qui
-                omnis explicabo ad.</p>
+            <h3>{{a.headline}}</h3>
+            <p>{{a.text}}</p>
         </div>
     </div>
 </div>

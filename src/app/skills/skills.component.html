@@ -1,95 +1,15 @@
-<div class="skills-background-container">
+<div class="skills-background-container" id="my-skills">
     <div>
         <h2>My Skills</h2>
     </div>
     <div class="all-skills-container">
-        <div class="skills-main-container">
+        <div *ngFor="let s of skills" class="skills-main-container">
             <div class="skills-container">
                 <div class="skills-img">
-                    <img src="../../assets/img/java script.png">
+                    <img src="{{s.icon}}">
                 </div>
                 <div class="skill">
-                    <p>Java script</p>
-                </div>
-            </div>
-        </div>
-        <div class="skills-main-container">
-            <div class="skills-container">
-                <div class="skills-img">
-                    <img src="../../assets/img/angular-logo.png">
-                </div>
-                <div class="skill">
-                    <p>Angular</p>
-                </div>
-            </div>
-        </div>
-        <div class="skills-main-container">
-            <div class="skills-container">
-                <div class="skills-img">
-                    <img src="../../assets/img/Group 205.png">
-                </div>
-                <div class="skill">
-                    <p>HTML/CSS</p>
-                </div>
-            </div>
-        </div>
-        <div class="skills-main-container">
-            <div class="skills-container">
-                <div class="skills-img">
-                    <img src="../../assets/img/Group 226.png">
-                </div>
-                <div class="skill">
-                    <p>SCRUM</p>
-                </div>
-            </div>
-        </div>
-        <div class="skills-main-container">
-            <div class="skills-container">
-                <div class="skills-img">
-                    <img src="../../assets/img/Git-Icon-1788C 2.png">
-                </div>
-                <div class="skill">
-                    <p>Git</p>
-                </div>
-            </div>
-        </div>
-        <div class="skills-main-container">
-            <div class="skills-container">
-                <div class="skills-img">
-                    <img src="../../assets/img/Group 20.png">
-                </div>
-                <div class="skill">
-                    <p>Design Thinking</p>
-                </div>
-            </div>
-        </div>
-        <div class="skills-main-container">
-            <div class="skills-container">
-                <div class="skills-img">
-                    <img src="../../assets/img/icons8-rest-api-80 2.png">
-                </div>
-                <div class="skill">
-                    <p>Rest API</p>
-                </div>
-            </div>
-        </div>
-        <div class="skills-main-container">
-            <div class="skills-container">
-                <div class="skills-img">
-                    <img src="../../assets/img/icons8-test-lab-96 2.png">
-                </div>
-                <div class="skill">
-                    <p>Test automation</p>
-                </div>
-            </div>
-        </div>
-        <div class="skills-main-container">
-            <div class="skills-container">
-                <div class="skills-img">
-                    <img src="../../assets/img/icons8-database-52 2.png">
-                </div>
-                <div class="skill">
-                    <p>Databases</p>
+                    <p>{{s.name}}</p>
                 </div>
             </div>
         </div>
