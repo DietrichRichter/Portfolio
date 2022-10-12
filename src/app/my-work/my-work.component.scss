@@ -32,6 +32,48 @@
     }
 }
 
+.work-portfolio {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+}
+
+.try-buttons {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: #fa2759;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    button {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    &:hover {
+        opacity: 1;
+        border: 3px solid #fa2759;
+        margin: 7px;
+        backdrop-filter: blur(5px);
+    }
+}
+
 .image-container {
     margin-top: 30px;
     margin-bottom: 70px;
@@ -47,12 +89,6 @@
         object-fit: contain;
         margin: 10px;
         cursor: pointer;
-        
-        &:hover {
-            border: 3px solid #fa2759;
-            margin: 7px;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
     }
 }
 
@@ -72,6 +108,16 @@
                 margin: 0;
                 border: 1px solid #fa2759;
             }
+        }
+    }
+
+    .work-portfolio {
+        width: 100%;
+    }
+
+    .try-buttons {
+        &:hover {
+            margin: 0;
         }
     }
 }

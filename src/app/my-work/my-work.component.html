@@ -8,14 +8,14 @@
         <button (click)="showJavaScriptWork()">Java Script</button>
     </div>
     <div class="image-container">
-        <div id="work-portfolio">
-            <img src="../../assets/img/work-portfolio.png">
-        </div>
-        <div id="work-ell-pollo-loco">
-            <a href="http://dietrich-richter.com/El_pollo_loco/index.html" target="_blank"><img src="../../assets/img/startscreen_1.png"></a>
-        </div>
-        <div id="work-join">
-            <a href="http://dietrich-richter.com/JOIN/welcome.html" target="_blank"><img src="../../assets/img/work.join.png"></a>
+        <div *ngFor="let w of myWork" class="work-portfolio" id="work-portfolio">
+            <img src="{{w.img}}">
+            <div class="try-buttons">
+                <h3>{{w.headline}}</h3>
+                <p>{{w.description}}</p>
+                <a href="{{w.tryLink}}" target="_blank"><button>Try Out</button></a>
+                <a href="{{w.githubLink}}" target="_blank"><button>Github</button></a>
+            </div>
         </div>
     </div>
 </div>
