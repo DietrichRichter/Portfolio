@@ -1,3 +1,7 @@
+.d-none {
+    display: none;
+}
+
 .my-work-container {
     background-color: #000000;
     padding-left: 100px;
@@ -38,9 +42,9 @@
     align-items: center;
 
     img {
-        width: 300px;
-        height: 200px;
-        object-fit: cover;
+        width: 400px;
+        height: 300px;
+        object-fit: contain;
         margin: 10px;
         cursor: pointer;
         
@@ -48,6 +52,26 @@
             border: 3px solid #fa2759;
             margin: 7px;
             background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .my-work-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .image-container {
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+
+            &:hover {
+                margin: 0;
+                border: 1px solid #fa2759;
+            }
         }
     }
 }

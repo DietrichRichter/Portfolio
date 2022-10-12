@@ -3,25 +3,19 @@
         <h2>My Work</h2>
     </div>
     <div class="buttons">
-        <button>All</button>
-        <button>Angular</button>
-        <button>Java Script</button>
+        <button (click)="showAllWorks()">All</button>
+        <button (click)="showAngularWork()">Angular</button>
+        <button (click)="showJavaScriptWork()">Java Script</button>
     </div>
     <div class="image-container">
-        <div>
-            <img src="../../assets/img/work1.jpg">
+        <div id="work-portfolio">
+            <img src="../../assets/img/work-portfolio.png">
         </div>
-        <div>
-            <img src="../../assets/img/work1.jpg">
+        <div id="work-ell-pollo-loco">
+            <a href="http://dietrich-richter.com/El_pollo_loco/index.html" target="_blank"><img src="../../assets/img/startscreen_1.png"></a>
         </div>
-        <div>
-            <img src="../../assets/img/work1.jpg">
-        </div>
-        <div>
-            <img src="../../assets/img/work1.jpg">
-        </div>
-        <div>
-            <img src="../../assets/img/work1.jpg">
+        <div id="work-join">
+            <a href="http://dietrich-richter.com/JOIN/welcome.html" target="_blank"><img src="../../assets/img/work.join.png"></a>
         </div>
     </div>
 </div>
