@@ -28,7 +28,7 @@
     img {
         height: 300px;
         width: 300px;
-        object-fit: contain;
+        object-fit: cover;
         background-color: #fa2759;
         border-radius: 100%;
     }
@@ -88,5 +88,12 @@
         h1 {
             font-size: 40px;
         }
+    }
+
+    .button-container {
+       button {
+        width: 150px;
+        height: 50px;
+       }
     }
 }

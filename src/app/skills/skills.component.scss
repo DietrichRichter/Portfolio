@@ -70,18 +70,30 @@
     }
 }
 
-@media(max-width:550px) {
+@media(max-width:1000px) {
     .skills-background-container {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 0;
     }
+
+    .all-skills-container {
+        width: 100%;
+    }
+}
+
+@media(max-width:850px) {
+    .skills-main-container {
+        width: 150px;
+    }
+}
+
+@media(max-width:550px) {
 
     .all-skills-container {
         width: 100%;
     }
 
     .skills-main-container {
-        width: 100%;
+        width: 100px;
     }
 
     .skill {
@@ -93,5 +105,19 @@
     .skills-background-container {
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .skills-main-container {
+        margin: 8px;
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .skill {
+        height: 80px;
+
+        p {
+            font-size: 12px;
+        }
     }
 }

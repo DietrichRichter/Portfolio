@@ -18,7 +18,7 @@
     img {
         height: 200px;
         width: 200px;
-        object-fit: contain;
+        object-fit: cover;
         background-color: #fa2759;
         border-radius: 100%;
     }
@@ -73,5 +73,23 @@
     img {
         height: 30px;
         width: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        margin: 0;
+    }
+
+    .icon-main-container {
+        display: flex;
+        flex-direction: column;
     }
 }

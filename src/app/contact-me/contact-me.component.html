@@ -5,17 +5,17 @@
             <p>Get in touch via the form below, or by emailing <span>dietrichrichter@gmx.de</span></p>
         </div>
         <div class="contact">
-            <form>
+            <form (submit)="sendMail()" #myForm>
                 <p>Name</p>
-                <input placeholder="Enter your name" type="text">
+                <input name="name" placeholder="Enter your name" type="text">
                 <p>Email address</p>
                 <input placeholder="Enter your Email address" type="text">
                 <p>Message</p>
-                <textarea placeholder="Enter your message" cols="30" rows="10"></textarea>
+                <textarea name="message" placeholder="Enter your message" cols="30" rows="10"></textarea>
+                <div class="button">
+                    <button type="submit">Send</button>
+                </div>
             </form>
-        </div>
-        <div class="button">
-            <button>Send</button>
         </div>
     </div>
 </div>
