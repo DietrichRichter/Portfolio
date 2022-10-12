@@ -13,21 +13,24 @@ export class MyWorkComponent implements OnInit {
       headline: 'Portfolio',
       description: 'Based on Angular',
       githubLink: '',
-      tryLink: ''
+      tryLink: '',
+      workID: 'work-portfolio'
     },
     {
       img: '../../assets/img/startscreen_1.png',
       headline: 'El pollo loco',
       description: 'Based on Java Script',
       githubLink: 'https://github.com/DietrichRichter/El_pollo_loco',
-      tryLink: 'http://dietrich-richter.com/El_pollo_loco/index.html'
+      tryLink: 'http://dietrich-richter.com/El_pollo_loco/index.html',
+      workID: 'work-ell-pollo-loco'
     },
     {
       img: '../../assets/img/work.join.png',
       headline: 'JOIN',
       description: 'Based on Java Script',
       githubLink: 'https://github.com/Th-Da/JOIN',
-      tryLink: 'http://dietrich-richter.com/JOIN/welcome.html'
+      tryLink: 'http://dietrich-richter.com/JOIN/welcome.html',
+      workID: 'work-join'
     },
   ];
 

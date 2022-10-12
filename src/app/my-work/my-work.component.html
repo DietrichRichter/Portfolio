@@ -8,7 +8,7 @@
         <button (click)="showJavaScriptWork()">Java Script</button>
     </div>
     <div class="image-container">
-        <div *ngFor="let w of myWork" class="work-portfolio" id="work-portfolio">
+        <div *ngFor="let w of myWork" class="work-portfolio" id="{{w.workID}}">
             <img src="{{w.img}}">
             <div class="try-buttons">
                 <h3>{{w.headline}}</h3>
