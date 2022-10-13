@@ -1,14 +1,14 @@
 <div class="my-work-container" id="my-work-container">
-    <div>
+    <div data-aos="zoom-in">
         <h2>My Work</h2>
     </div>
-    <div class="buttons">
+    <div data-aos="zoom-in" class="buttons">
         <button (click)="showAllWorks()">All</button>
         <button (click)="showAngularWork()">Angular</button>
         <button (click)="showJavaScriptWork()">Java Script</button>
     </div>
     <div class="image-container">
-        <div *ngFor="let w of myWork" class="work-portfolio" id="{{w.workID}}">
+        <div data-aos="zoom-out-up" *ngFor="let w of myWork" class="work-portfolio" id="{{w.workID}}">
             <img src="{{w.img}}">
             <div class="try-buttons">
                 <h3>{{w.headline}}</h3>
