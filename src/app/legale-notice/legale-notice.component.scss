@@ -11,3 +11,34 @@
         padding-top: 100px;
     }
 }
+
+@media(max-width: 600px) {
+    .legale-notice-container {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 15px;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        a {
+            font-size: 8px;
+        }
+
+        li {
+            font-size: 10px;
+        }
+    }
+}

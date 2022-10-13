@@ -7,7 +7,7 @@ import { LegaleNoticeComponent } from './legale-notice/legale-notice.component';
 const routes: Routes = [
   {path: '', component: HeadComponent},
   {path: 'imprint', component: ImprintComponent},
-  {path: 'legalenotice', component: LegaleNoticeComponent},
+  {path: 'legale-notice', component: LegaleNoticeComponent},
 ];
 
 @NgModule({
