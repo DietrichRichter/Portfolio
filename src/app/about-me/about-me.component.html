@@ -1,21 +1,21 @@
 <div class="about-me-main-container" id="about-me-container">
     <div class="about-me-container">
-        <div data-aos="fade-right" class="image">
-            <img src="assets/img/PNG-Bild.png">
+        <div class="image">
+            <img data-aos="fade-right" src="assets/img/PNG-Bild.png">
         </div>
-        <div data-aos="fade-left" class="about-me-text">
+        <div data-aos="fade-right" class="about-me-text">
             <h2>About me.</h2>
             <p>"I'm a 33-year-old front-end developer who loves solving problems and taking on new challenges."</p>
         </div>
     </div>
     <div class="line"></div>
     <div class="icon-main-container">
-        <div *ngFor="let a of aboutMe" class="icon-container">
-            <div data-aos="zoom-out-down" class="img-container">
+        <div data-aos="fade-right" *ngFor="let a of aboutMe" class="icon-container">
+            <div class="img-container">
                 <img src="{{a.icon}}">
             </div>
-            <h3  data-aos="zoom-out-down">{{a.headline}}</h3>
-            <p  data-aos="zoom-out-down">{{a.text}}</p>
+            <h3>{{a.headline}}</h3>
+            <p>{{a.text}}</p>
         </div>
     </div>
 </div>
