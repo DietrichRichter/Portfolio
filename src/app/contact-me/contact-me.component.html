@@ -5,15 +5,15 @@
             <p>Get in touch via the form below, or by emailing <a href="mailto:dietrichrichter@gmx.de"><span>dietrichrichter@gmx.de</span></a></p>
         </div>
         <div class="contact">
-            <form data-aos="fade-right" (submit)="sendMail()" ngNativeValidate #myForm>
+            <form action="http://dietrich-richter.com/send_mail/send_mail.php" method="POST" data-aos="fade-right">
                 <p>Name</p>
-                <input required name="name" placeholder="Enter your name" type="text" #nameField>
+                <input name="name" placeholder="Enter your name" type="text">
                 <p>Email address</p>
-                <input required name="email" placeholder="Enter your Email address" type="text" #emailField>
+                <input name="email" placeholder="Enter your Email address" type="email">
                 <p>Message</p>
-                <textarea required name="message" placeholder="Enter your message" cols="30" rows="10" #messageField></textarea>
+                <textarea name="message" placeholder="Enter your message"></textarea>
                 <div class="button">
-                    <button #sendButton>Send</button>
+                    <button type="submit">Send</button>
                 </div>
             </form>
         </div>
