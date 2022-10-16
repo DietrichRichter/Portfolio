@@ -4,16 +4,16 @@
             <h1>Contact me.</h1>
             <p>Get in touch via the form below, or by emailing <a href="mailto:dietrichrichter@gmx.de"><span>dietrichrichter@gmx.de</span></a></p>
         </div>
-        <div class="contact">
-            <form action="http://dietrich-richter.com/send_mail/send_mail.php" method="POST" data-aos="fade-right">
+        <div data-aos="fade-right" class="contact">
+            <form (submit)="sendMail()" ngNativeValidate #myForm>
                 <p>Name</p>
-                <input name="name" placeholder="Enter your name" type="text">
+                <input required placeholder="Enter your name" type="text" name="name" #nameField>
                 <p>Email address</p>
-                <input name="email" placeholder="Enter your Email address" type="email">
+                <input required placeholder="Enter your Email address" type="email" name="email" #emailField>
                 <p>Message</p>
-                <textarea name="message" placeholder="Enter your message"></textarea>
+                <textarea required placeholder="Enter your message" name="message" #messageField></textarea>
                 <div class="button">
-                    <button type="submit">Send</button>
+                    <button type="submit" #sendButton>Send</button>
                 </div>
             </form>
         </div>

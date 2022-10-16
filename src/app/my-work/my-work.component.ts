@@ -12,8 +12,8 @@ export class MyWorkComponent implements OnInit {
       img: 'assets/img/work-portfolio.png',
       headline: 'Portfolio',
       description: 'Based on Angular',
-      githubLink: '',
-      tryLink: '',
+      githubLink: 'https://github.com/DietrichRichter/Portfolio',
+      tryLink: '#',
       workID: 'work-portfolio'
     },
     {
