@@ -7,15 +7,22 @@
         <div data-aos="fade-right" class="contact">
             <form (submit)="sendMail()" ngNativeValidate #myForm>
                 <p>Name</p>
-                <input required placeholder="Enter your name" type="text" name="name" #nameField>
+                <input id="name-field" required placeholder="Enter your name" type="text" name="name" #nameField>
                 <p>Email address</p>
                 <input required placeholder="Enter your Email address" type="email" name="email" #emailField>
                 <p>Message</p>
                 <textarea required placeholder="Enter your message" name="message" #messageField></textarea>
                 <div class="button">
-                    <button type="submit" #sendButton>Send</button>
+                    <button (click)="openSendMail();" type="submit" #sendButton>Send</button>
                 </div>
             </form>
         </div>
+    </div>
+</div>
+<div id="close" class="send-mail-main-container d-none">
+    <div class="send-mail-container">
+        <h3>The E-Mail has been sent</h3>
+        <img src="assets/img/send-mail.png">
+        <img (click)="closeSend();" class="close" src="assets/img/close.png">
     </div>
 </div>

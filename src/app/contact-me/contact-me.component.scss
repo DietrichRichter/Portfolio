@@ -10,6 +10,10 @@
     }
 }
 
+.d-none {
+    display: none !important;
+}
+
 .contact-container {
     width: 530px;
 }
@@ -91,6 +95,45 @@
             cursor: pointer;
         }
     }
+}
+
+.send-mail-main-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.send-mail-container {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    img {
+        height: 50px;
+        width: 100px;
+    }
+}
+
+.close {
+    height: 20px !important;
+    width: 20px !important;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
 @media (max-width:600px) {

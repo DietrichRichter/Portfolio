@@ -47,4 +47,13 @@ export class ContactMeComponent implements OnInit {
     sendButton.disabled = false;
 
   }
+
+  openSendMail() {
+    document.getElementById('close')?.classList.remove('d-none');
+  }
+
+  closeSend() {
+    document.getElementById('close')?.classList.add('d-none');
+    this.myForm.nativeElement.reset();
+  }
 }
