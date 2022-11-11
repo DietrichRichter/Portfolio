@@ -11,6 +11,15 @@ body {
     background-color: #000000;
 }
 
+.list-container {
+    li {
+        &:hover {
+            color: #FA2759;
+        }
+    }
+
+}
+
 nav {
     min-height: 80px;
     padding-left: 100px;
@@ -38,6 +47,7 @@ nav {
 
             &:hover {
                 border-bottom: 4px solid #FA2759;
+                color: #FA2759;
             }
 
             & a {

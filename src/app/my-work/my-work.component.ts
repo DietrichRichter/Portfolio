@@ -29,8 +29,16 @@ export class MyWorkComponent implements OnInit {
       headline: 'JOIN',
       description: 'Based on Java Script',
       githubLink: 'https://github.com/Th-Da/JOIN',
-      tryLink: 'http://dietrich-richter.com/JOIN/welcome.html',
+      tryLink: 'http://dietrich-richter.com/JOIN/index.html',
       workID: 'work-join'
+    },
+    {
+      img: 'assets/img/pokedex.png',
+      headline: 'Pokedex',
+      description: 'Based on Java Script and Rest API',
+      githubLink: 'https://github.com/DietrichRichter/Pokedex',
+      tryLink: 'http://dietrich-richter.com/Pokedex/index.html',
+      workID: 'work-pokedex'
     },
   ];
 
@@ -43,11 +51,13 @@ export class MyWorkComponent implements OnInit {
     document.getElementById('work-portfolio')?.classList.remove('d-none');
     document.getElementById('work-ell-pollo-loco')?.classList.remove('d-none');
     document.getElementById('work-join')?.classList.remove('d-none');
+    document.getElementById('work-pokedex')?.classList.remove('d-none');
   }
 
   showAngularWork() {
     document.getElementById('work-ell-pollo-loco')?.classList.add('d-none');
     document.getElementById('work-join')?.classList.add('d-none');
+    document.getElementById('work-pokedex')?.classList.add('d-none');
     document.getElementById('work-portfolio')?.classList.remove('d-none');
   }
 
@@ -55,6 +65,7 @@ export class MyWorkComponent implements OnInit {
     document.getElementById('work-portfolio')?.classList.add('d-none');
     document.getElementById('work-ell-pollo-loco')?.classList.remove('d-none');
     document.getElementById('work-join')?.classList.remove('d-none');
+    document.getElementById('work-pokedex')?.classList.remove('d-none');
   }
 
 }

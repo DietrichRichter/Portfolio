@@ -2,6 +2,7 @@
     background-color: #000000;
     padding-left: 100px;
     padding-right: 100px;
+    height: 100vh;
 
     button {
         width: 300px;
@@ -20,9 +21,13 @@
     }
 }
 
+.profil-img-container {
+    margin-left: 50px;
+}
+
 .head-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 100px;
     padding-bottom: 30px;
 
@@ -42,6 +47,11 @@
     span {
         color: #fa2759;
     }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
 .arrow-container {
@@ -66,6 +76,10 @@
     .button-container {
         display: flex;
         justify-content: center;
+    }
+
+    .profil-img-container {
+        margin-left: 0;
     }
 }
 
