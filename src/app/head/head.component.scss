@@ -2,7 +2,8 @@
     background-color: #000000;
     padding-left: 100px;
     padding-right: 100px;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 100%;
 
     button {
         width: 300px;

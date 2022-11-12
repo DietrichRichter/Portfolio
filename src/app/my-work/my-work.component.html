@@ -1,14 +1,14 @@
 <div class="my-work-container" id="my-work-container">
     <div>
-        <h2 data-aos="flip-up">My Work</h2>
+        <h2 data-aos="fade-right">My Work</h2>
     </div>
-    <div data-aos="flip-up" class="buttons">
+    <div data-aos="fade-right" class="buttons">
         <button (click)="showAllWorks()">All</button>
         <button (click)="showAngularWork()">Angular</button>
-        <button (click)="showJavaScriptWork()">Java Script</button>
+        <button (click)="showJavaScriptWork()">JavaScript</button>
     </div>
-    <div class="image-container">
-        <div data-aos="flip-up" *ngFor="let w of myWork" class="work-portfolio" id="{{w.workID}}">
+    <div data-aos="fade-right" class="image-container">
+        <div *ngFor="let w of myWork" class="work-portfolio" id="{{w.workID}}">
             <img src="{{w.img}}">
             <div class="try-buttons">
                 <h3>{{w.headline}}</h3>

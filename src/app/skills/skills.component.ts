@@ -10,7 +10,7 @@ export class SkillsComponent implements OnInit {
   skills = [
     {
       icon: 'assets/img/javascript-logo.png',
-      name: 'Java script'
+      name: 'JavaScript'
     },
     {
       icon: 'assets/img/angular-logo.png',

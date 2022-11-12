@@ -47,6 +47,11 @@
     display: flex;
     margin-top: 70px;
     justify-content: center;
+
+    p {
+        hyphens: auto;
+        text-align: justify;
+    }
 }
 
 .icon-container {
