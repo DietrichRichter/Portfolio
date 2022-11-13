@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-me',
@@ -11,6 +12,11 @@ export class ContactMeComponent implements OnInit {
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
+
+  sendingMail = false;
+  userName: any;
+  userEmail: any;
+  userText: any;
 
 
   constructor() { }
@@ -34,7 +40,7 @@ export class ContactMeComponent implements OnInit {
     fd.append('message', messageField.value);
     fd.append('email', emailField.value);
 
-    await fetch('http://dietrich-richter.com/send_mail/send_mail.php',
+    await fetch('https://dietrich-richter.com/send_mail/send_mail.php',
       {
         method: 'POST',
         body: fd
@@ -46,6 +52,9 @@ export class ContactMeComponent implements OnInit {
     emailField.disabled = false;
     sendButton.disabled = false;
 
+    if (nameField.disabled == false) {
+      this.sendingMail = true;
+    }
   }
 
   openSendMail() {

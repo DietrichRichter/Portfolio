@@ -7,13 +7,13 @@
         <div data-aos="fade-right" class="contact">
             <form (submit)="sendMail()" ngNativeValidate #myForm>
                 <p>Name</p>
-                <input id="name-field" required placeholder="Enter your name" type="text" name="name" #nameField>
+                <input [(ngModel)]="userName" id="name-field" required placeholder="Enter your name" type="text" name="name" #nameField>
                 <p>Email address</p>
-                <input required placeholder="Enter your Email address" type="email" name="email" #emailField>
+                <input [(ngModel)]="userEmail" required placeholder="Enter your Email address" type="email" name="email" #emailField>
                 <p>Message</p>
-                <textarea required placeholder="Enter your message" name="message" #messageField></textarea>
+                <textarea [(ngModel)]="userText" required placeholder="Enter your message" name="message" #messageField></textarea>
                 <div class="button">
-                    <button (click)="openSendMail();" type="submit" #sendButton>Send</button>
+                    <button [disabled]="!userName || !userEmail || !userText" [class.button-disabled]="!userName || !userEmail || !userText" (click)="openSendMail();" type="submit" #sendButton>Send</button>
                 </div>
             </form>
         </div>

@@ -97,6 +97,10 @@
     }
 }
 
+.button-disabled {
+   cursor: not-allowed !important;
+}
+
 .send-mail-main-container {
     position: fixed;
     height: 100%;

@@ -17,11 +17,15 @@ export class SkillsComponent implements OnInit {
       name: 'Angular'
     },
     {
-      icon: 'assets/img/Group 205.png',
-      name: 'HTML/CSS'
+      icon: 'assets/img/html.png',
+      name: 'HTML'
     },
     {
-      icon: 'assets/img/Group 226.png',
+      icon: 'assets/img/Group 205.png',
+      name: 'CSS'
+    },
+    {
+      icon: 'assets/img/scrum.png',
       name: 'SCRUM'
     },
     {
@@ -37,12 +41,8 @@ export class SkillsComponent implements OnInit {
       name: 'Rest API'
     },
     {
-      icon: 'assets/img/icons8-test-lab-96 2.png',
-      name: 'Test automation'
-    },
-    {
-      icon: 'assets/img/icons8-database-52 2.png',
-      name: 'Databases'
+      icon: 'assets/img/firebase.png',
+      name: 'Firebase'
     },
   ];
 

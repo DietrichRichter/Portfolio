@@ -74,6 +74,10 @@
 @media(max-width:1000px) {
     .skills-background-container {
         padding: 0;
+
+        h2 {
+            padding-bottom: 100px;
+        }
     }
 
     .all-skills-container {

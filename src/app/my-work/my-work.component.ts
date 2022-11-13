@@ -19,7 +19,7 @@ export class MyWorkComponent implements OnInit {
     {
       img: 'assets/img/startscreen_1.png',
       headline: 'El pollo loco',
-      description: 'Based on Java Script',
+      description: 'Based on JavaScript',
       githubLink: 'https://github.com/DietrichRichter/El_pollo_loco',
       tryLink: 'https://dietrich-richter.com/El_pollo_loco/index.html',
       workID: 'work-ell-pollo-loco'
@@ -27,7 +27,7 @@ export class MyWorkComponent implements OnInit {
     {
       img: 'assets/img/work.join.png',
       headline: 'JOIN',
-      description: 'Based on Java Script',
+      description: 'Based on JavaScript',
       githubLink: 'https://github.com/Th-Da/JOIN',
       tryLink: 'https://dietrich-richter.com/JOIN/index.html',
       workID: 'work-join'
@@ -35,7 +35,7 @@ export class MyWorkComponent implements OnInit {
     {
       img: 'assets/img/pokedex.png',
       headline: 'Pokedex',
-      description: 'Based on Java Script and Rest API',
+      description: 'Based on JavaScript and Rest API',
       githubLink: 'https://github.com/DietrichRichter/Pokedex',
       tryLink: 'https://dietrich-richter.com/Pokedex/index.html',
       workID: 'work-pokedex'
