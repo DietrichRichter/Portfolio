@@ -8,13 +8,50 @@
         <button (click)="showJavaScriptWork()">JavaScript</button>
     </div>
     <div data-aos="fade-right" class="image-container">
-        <div *ngFor="let w of myWork" class="work-portfolio" id="{{w.workID}}">
-            <img src="{{w.img}}">
+        <div *ngIf="allWorks || angularWork" class="work-portfolio">
+            <img src="assets/img/work-portfolio.png">
             <div class="try-buttons">
-                <h3>{{w.headline}}</h3>
-                <p>{{w.description}}</p>
-                <a href="{{w.tryLink}}" target="_blank"><button>Try Out</button></a>
-                <a href="{{w.githubLink}}" target="_blank"><button>Github</button></a>
+                <h3>Portfolio</h3>
+                <p>Based on Angular</p>
+                <a href="#" target="_blank"><button>Try Out</button></a>
+                <a href="https://github.com/DietrichRichter/Portfolio" target="_blank"><button>Github</button></a>
+            </div>
+        </div>
+        <div *ngIf="allWorks || javascriptWork" class="work-portfolio">
+            <img src="assets/img/startscreen_1.png">
+            <div class="try-buttons">
+                <h3>El pollo loco</h3>
+                <p>Based on JavaScript</p>
+                <a href="https://dietrich-richter.com/El_pollo_loco/index.html" target="_blank"><button>Try
+                        Out</button></a>
+                <a href="https://github.com/DietrichRichter/El_pollo_loco" target="_blank"><button>Github</button></a>
+            </div>
+        </div>
+        <div *ngIf="allWorks || javascriptWork" class="work-portfolio">
+            <img src="assets/img/work.join.png">
+            <div class="try-buttons">
+                <h3>JOIN</h3>
+                <p>Based on JavaScript</p>
+                <a href="https://dietrich-richter.com/JOIN/index.html" target="_blank"><button>Try Out</button></a>
+                <a href="https://github.com/Th-Da/JOIN" target="_blank"><button>Github</button></a>
+            </div>
+        </div>
+        <div *ngIf="allWorks || javascriptWork" class="work-portfolio">
+            <img src="assets/img/pokedex.png">
+            <div class="try-buttons">
+                <h3>Pokedex</h3>
+                <p>Based on JavaScript and Rest API</p>
+                <a href="https://dietrich-richter.com/Pokedex/index.html" target="_blank"><button>Try Out</button></a>
+                <a href="https://github.com/DietrichRichter/Pokedex" target="_blank"><button>Github</button></a>
+            </div>
+        </div>
+        <div *ngIf="allWorks || angularWork" class="work-portfolio">
+            <img src="assets/img/ringoffire.png">
+            <div class="try-buttons">
+                <h3>Ring of Fire</h3>
+                <p>Based on Angular and Database</p>
+                <a href="https://ringoffire.dietrich-richter.com" target="_blank"><button>Try Out</button></a>
+                <a href="https://github.com/DietrichRichter/RingOfFire" target="_blank"><button>Github</button></a>
             </div>
         </div>
     </div>
